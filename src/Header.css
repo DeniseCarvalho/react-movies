@@ -1,0 +1,55 @@
+.mobile{
+    visibility: hidden;
+}
+
+.header{
+    font-family: Anton;
+    font-size: 144px;
+    color: #A91F1F;
+    text-shadow: 5px 12px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    padding-top: 0;
+    padding-left: 15px;
+    padding-bottom: 0;
+    
+}
+
+.genres{
+    position: absolute;
+    width: 165px;
+    height: 1024px;
+    left: 25px;
+    top: 0;
+    background: linear-gradient(179.97deg, rgba(194, 191, 191, 0.4) 0%, rgba(227, 226, 226, 0.8) 15.21%, #FFFFFF 50.51%, rgba(196, 196, 196, 0.8) 83.25%, rgba(196, 196, 196, 0) 100%);
+    padding-left: 50px;
+    padding-top: 200px;
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {  
+    
+.genres{
+    visibility: collapse;
+    position: absolute;
+    width: 165px;
+    height: 1024px;
+    left: 25px;
+    top: 0;
+    background: linear-gradient(179.97deg, rgba(194, 191, 191, 0.4) 0%, rgba(227, 226, 226, 0.8) 15.21%, #FFFFFF 50.51%, rgba(196, 196, 196, 0.8) 83.25%, rgba(196, 196, 196, 0) 100%);
+    padding-left: 50px;
+    padding-top: 200px;
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+}
+    
+.mobile{
+    visibility: visible;
+    font-size: 50px;
+    color: #ffffff;
+    margin: 30px;
+}
+    
+}
