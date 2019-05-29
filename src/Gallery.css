@@ -1,12 +1,29 @@
 .gallery {
+    justify-content: center;
     display: grid;    
-    grid-template-columns: repeat(auto-fill, 152px);
-    grid-template-rows: 238px;
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-rows: auto;
+    grid-gap: 20px;
 }
 
-.gallery__img {    
-    width: 152px;    
-    height: 238px;    
+.gallery .movie {
+    background: #fff;
+    width: 350px;
+    height: 231px;
+}
+
+.movie-poster {
+    float: left;
     object-fit: cover;
+    width: 154px;
+}
+
+.movie-data {
+    width: 196px;
+    float: left;
+    object-fit: cover;
+}
+
+.movie-data h3 {
+    text-align: center;
 }
