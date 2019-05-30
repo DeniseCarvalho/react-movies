@@ -3,13 +3,19 @@
     display: grid;    
     grid-template-columns: repeat(auto-fill, 350px);
     grid-template-rows: auto;
-    grid-gap: 20px;
+    grid-gap: 20px;    
 }
 
 .gallery .movie {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.6);
     width: 350px;
     height: 231px;
+}
+
+.gallery .movie:hover{
+    animation-name: grow;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;    
 }
 
 .movie-poster {
@@ -19,11 +25,48 @@
 }
 
 .movie-data {
+    font-family: Oxygen, sans-serif;
+    font-size: 12px;
     width: 196px;
     float: left;
     object-fit: cover;
+    padding: 10px;
+}
+
+.movie-data .title {
+    height: 105px;
+}
+
+.movie-data .genre {
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .movie-data h3 {
     text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.movie-data h4 {
+    line-height: 30px;
+    color: #000;
+}
+
+.movie-data h5 {
+    text-align: center;
+    font-size: 11px;
+}
+
+.data {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes grow {
+    0% {transform: scale(1.0);}
+    100% {transform: scale(1.2);}    
 }

@@ -1,55 +1,84 @@
-.mobile{
-    visibility: hidden;
-}
-
 .header{
-    font-family: Anton;
-    font-size: 144px;
+    font-family: Anton,sans-serif;
+    font-size: 120px;
     color: #A91F1F;
     text-shadow: 5px 12px 4px rgba(0, 0, 0, 0.25);
     margin: 0;
     padding-top: 0;
-    padding-left: 15px;
+    margin-left: 30px;
+    padding-bottom: 0;    
+}
+
+.rating {
+    font-family: Oxygen, sans-serif;
+    font-size: 14px;
+    color: #d3d3d3;
+    line-height: 30px;
+    padding: 80px;
+}
+
+.slider {
+  appearance: none;
+  width: 250px;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #A91F1F;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px){
+    
+[class*="col-"] {
+    width: 100%;
+}
+    
+.header{
+    font-family: Anton;
+    font-size: 100px;
+    color: #A91F1F;
+    text-shadow: 5px 12px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    padding-top: 0;
+    margin-left: 0;
     padding-bottom: 0;
-    
-}
-
-.genres{
-    position: absolute;
-    width: 165px;
-    height: 1024px;
-    left: 25px;
-    top: 0;
-    background: linear-gradient(179.97deg, rgba(194, 191, 191, 0.4) 0%, rgba(227, 226, 226, 0.8) 15.21%, #FFFFFF 50.51%, rgba(196, 196, 196, 0.8) 83.25%, rgba(196, 196, 196, 0) 100%);
-    padding-left: 50px;
-    padding-top: 200px;
-    margin: 0;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 12px;
-}
-
-@media only screen and (max-width: 768px) {  
-    
-.genres{
-    visibility: collapse;
-    position: absolute;
-    width: 165px;
-    height: 1024px;
-    left: 25px;
-    top: 0;
-    background: linear-gradient(179.97deg, rgba(194, 191, 191, 0.4) 0%, rgba(227, 226, 226, 0.8) 15.21%, #FFFFFF 50.51%, rgba(196, 196, 196, 0.8) 83.25%, rgba(196, 196, 196, 0) 100%);
-    padding-left: 50px;
-    padding-top: 200px;
-    margin: 0;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 12px;
+    text-align: center;    
 }
     
-.mobile{
-    visibility: visible;
-    font-size: 50px;
-    color: #ffffff;
-    margin: 30px;
+.rating {
+    font-family: Oxygen, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
 }
     
+.col-1{
+    visibility: hidden;  
+}
+ 
 }
